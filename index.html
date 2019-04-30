@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="UTF-8" />
+     
+    <!--css materialize-->
+    <link rel="stylesheet" href="materialize/css/materialize.css" />
+<link rel="stylesheet" href="materialize/css/geral.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>ADM-CIT</title>
+  </head>
+  <body>
+    <!--header-->
+    <div class="slider">
+      <ul class="slides">
+        <li>
+          <img src="img/tecnologia3.png" />
+          <!-- random image -->
+          <div class="caption left-align">
+            <h5 class="titulo">COORDENAÇÃO DE INOVAÇÃO TECNOLÓGICA
+            <h6 class="light grey-text text-lighten-3">
+           Administrativo</h4>
+            </h6>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!--final header-->
+    <!--menu tbs-->
+    <div class="row ">
+  
+        <div class="col s12 #3949ab indigo darken-1">
+            <ul class="tabs #3949ab indigo darken-1">
+                <li class="tab col s3"><a href="#test1">Cadastrar Empresas</a></li>
+                <li class="tab col s3"><a class="active" href="#test2">Consultar documentos</a></li>
+                <li class="tab col s3"><a class="active" href="#test3">Cadastrar Patentes</a></li>
+                <li class="tab col s3"><a class="active" href="#test4">Consultar Patentes</a></li>
+                <li class="tab col s3"><a href="#test4">Test 4</a></li>
+            </ul>
+        </div>
+        <!--cadastro de empresas-->
+
+        <div id="test1" >
+            <div class="col s12 ">
+    <div class="row">
+      <form >
+        <div class="row  ">
+          <div class="input-field col s6">
+            <input   name="razao_social" id="razao_social" type="text" class="validate">
+            <label for="razao_social">Razão Social</label>
+          </div>
+        
+        <div class="input-field col s4">
+          <input  name="nome_fantasia" id="nome_fantasia" type="text" class="validate">
+          <label for="nome_fantasia">Nome Fantasia</label>
+        </div>
+        </div>
+      
+        
+        <div class="row  ">
+          <div class="input-field col s4">
+            <input id="email" type="email" name="email" class="validate">
+            <label for="email">Email</label>
+          </div>
+          <div class="input-field col s4">
+            <input id="cnpj" name="cnpj" type="text" class="validate">
+            <label for="cnpj">CNPJ</label>
+          </div>
+        </div>
+        <div class="row">
+        <h5>Comprovação da Inexistência de Dívidas</h5>
+              <div class="input-field col s2">
+                
+                <input id="srf-gerado" name="srf-gerado" type="text" class="validate">
+                <label for="srf-gerado">(SRF) Data Gerada</label>
+              </div>
+                  <div class="input-field col s2">
+                  
+                    <input id="srf-gerado" name="srf-validade" type="text" class="validate">
+                    <label for="srf-gerado">(SRF)validade (em dias)</label>
+                  </div>
+               <div class="input-field col s2">
+                
+                <input id="srf-gerado" name="srf-gerado" type="text" class="validate">
+                <label for="cef-gerado">(CEF) Data Gerada</label>
+              </div>
+                  <div class="input-field col s2">
+                  
+                    <input id="cef-gerado" name="cef-gerado" type="text" class="validate">
+                    <label for="cef-gerado">(CEF)validade (em dias)</label>
+                  </div>
+          </div>
+          <div class="row">                 </div>
+                  <div class="input-field col s2">
+                  
+                    <input id="tcu-gerado" name="tcu-gerado" type="text" class="validate">
+                    <label for="tcu-gerado">(TCU) Data Gerada</label>
+                  </div>
+                  <div class="input-field col s2">
+                  
+                    <input id="tcu-gerado" name="tcu-gerado" type="text" class="validate">
+                    <label for="tcu-gerado">(TCU)validade (em dias)</label>
+                  </div>
+                      <div class="input-field col s2">
+                  
+                    <input id="trt-gerado" name="trt-gerado" type="text" class="validate">
+                    <label for="trt-gerado">(TRT) Data Gerada</label>
+                  </div>
+                  <div class="input-field col s2">
+                  
+                    <input id="trt-gerado" name="trt-gerado" type="text" class="validate">
+                    <label for="trt-gerado">(TRT)validade (em dias)</label>
+                  </div>
+                  
+          </div>
+<div class="row">
+  <h5>Habilitações</h5>
+
+  <div class="input-field col s4">
+   
+    <input id="cap_tec" name="cap_tec" type="text" class="validate">
+    <label for="srf-gerado">Atestado de Capacidade Técnica Operacional (data)</label>
+  </div>
+
+
+                  </div>
+           
+        </div>
+
+
+      
+      </form>
+         </div>
+   
+       </div>
+    </div>
+   
+
+
+       
+        <!--final cadastro de empresas-->
+        <div id="test2" class="col s12">Consultar Documentos</div>
+        <div id="test3" class="col s12">Cadastrar Patentes</div>
+        <div id="test4" class="col s12">Consultar Patentes</div>
+       
+     
+    </div>
+    <!--fim menu tabs-->
+
+  </body>
+  <!--jquery-->
+  <script type="text/javascript" src="materialize/js/jquery.js"></script>
+  <!--javascript materialize-->
+  <script type="text/javascript" src="materialize/js/materialize.js"></script>
+  <script>
+    //header
+    $(document).ready(function() {
+      $(".slider").slider({
+          indicators:false,
+          height:100
+
+      });
+    });
+  </script>
+</html>

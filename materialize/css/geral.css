@@ -1,0 +1,15 @@
+.caption {
+  position: absolute;
+  left: 10px;
+}
+.tabs .tab a {
+  color: #eee;
+} /*Black color to the text*/
+
+.tabs .tab a.active {
+  color: #ddd;
+} /*Background and text color when a tab is active*/
+
+.tabs .indicator {
+  background-color: #ddd;
+} /*Color of underline*/
